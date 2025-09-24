@@ -1,0 +1,28 @@
+services:
+  supabase-mcp-server:
+    container_name: supabase-mcp-server
+    image: node:18-alpine
+    restart: unless-stopped
+    working_dir: /app
+    environment:
+      - SUPABASE_ACCESS_TOKEN=sbp_d6630f75fb819930dbfc6ee2fb13677f8ca1192a
+      - SUPABASE_PROJECT_REF=mdwzohybippygoaqjtrq
+      - NODE_ENV=production
+    ports:
+      - "3001:3001"  # Puerto para comunicación MCP
+    volumes:
+      - ./mcp-data:/app/data
+      - /mnt/c/Users/LABORATORIO/Downloads/desarrollos/ORION OCG/pjet/mcp/start-mcp.sh:/app/start-mcp.sh
+    command: sh -c "npm install -y @supabase/mcp-server-supabase@latest && ls -la start-mcp.sh && chmod +x start-mcp.sh && sh start-mcp.sh"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+    networks:
+      - mcp-network
+
+networks:
+  mcp-network:
+    driver: bridge

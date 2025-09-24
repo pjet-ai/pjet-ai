@@ -1,0 +1,167 @@
+{
+  "analysis_date": "2025-09-22T03:06:58.234Z",
+  "project": "ORION OCG - Aviation Maintenance Suite",
+  "comparison_summary": {},
+  "detailed_analysis": {
+    "dim_cost_category": {
+      "table_name": "dim_cost_category",
+      "expected_columns": 6,
+      "actual_columns": 4,
+      "missing_columns": [],
+      "column_coverage_percent": 67,
+      "has_data": true,
+      "record_count": 4,
+      "issues": [],
+      "warnings": []
+    },
+    "parts": {
+      "table_name": "parts",
+      "expected_columns": 11,
+      "actual_columns": 6,
+      "missing_columns": [
+        "manufacturer",
+        "ata_chapter",
+        "ata_code",
+        "is_airworthy",
+        "shelf_life_months"
+      ],
+      "column_coverage_percent": 55,
+      "has_data": true,
+      "record_count": 258,
+      "issues": [],
+      "warnings": []
+    },
+    "invoices": {
+      "table_name": "invoices",
+      "expected_columns": 29,
+      "actual_columns": 8,
+      "missing_columns": [
+        "po_number",
+        "due_date",
+        "exchange_rate",
+        "calculated_total",
+        "vendor_name",
+        "vendor_address",
+        "vendor_phone",
+        "vendor_faa_certificate",
+        "aircraft_registration",
+        "aircraft_hours_total",
+        "aircraft_cycles_total",
+        "service_location",
+        "technician_name",
+        "inspector_name",
+        "status",
+        "processing_method",
+        "file_path",
+        "file_size_bytes",
+        "file_page_count",
+        "extracted_at",
+        "processed_at"
+      ],
+      "column_coverage_percent": 28,
+      "has_data": true,
+      "record_count": 1,
+      "issues": [
+        "Columna crítica faltante: vendor_name",
+        "Columna crítica faltante: status",
+        "Cobertura de columnas muy baja (28%)",
+        "Campos críticos faltantes en facturas: vendor_name, status, aircraft_registration"
+      ],
+      "warnings": []
+    },
+    "discrepancies": {
+      "table_name": "discrepancies",
+      "expected_columns": 16,
+      "actual_columns": 10,
+      "missing_columns": [
+        "compliance_notes",
+        "action_taken",
+        "priority",
+        "category",
+        "estimated_hours",
+        "actual_hours",
+        "completion_date"
+      ],
+      "column_coverage_percent": 63,
+      "has_data": true,
+      "record_count": 274,
+      "issues": [
+        "Columna crítica faltante: priority",
+        "Columna crítica faltante: category",
+        "Campos de auditoría faltantes: priority, category, estimated_hours, actual_hours"
+      ],
+      "warnings": []
+    },
+    "discrepancy_costs": {
+      "table_name": "discrepancy_costs",
+      "expected_columns": 10,
+      "actual_columns": 4,
+      "missing_columns": [
+        "unit_price",
+        "quantity",
+        "labor_rate",
+        "labor_hours",
+        "notes"
+      ],
+      "column_coverage_percent": 40,
+      "has_data": true,
+      "record_count": 282,
+      "issues": [
+        "Cobertura de columnas muy baja (40%)"
+      ],
+      "warnings": []
+    },
+    "discrepancy_parts": {
+      "table_name": "discrepancy_parts",
+      "expected_columns": 14,
+      "actual_columns": 0,
+      "missing_columns": [
+        "id",
+        "discrepancy_id",
+        "part_id",
+        "item_ref",
+        "quantity",
+        "unit_price",
+        "line_total",
+        "serial_number",
+        "batch_number",
+        "expiration_date",
+        "condition_check",
+        "airworthiness_cert",
+        "created_at",
+        "updated_at"
+      ],
+      "column_coverage_percent": 0,
+      "has_data": false,
+      "record_count": 0,
+      "issues": [
+        "Cobertura de columnas muy baja (0%)"
+      ],
+      "warnings": [
+        "Tabla de partes por discrepancia vacía - posible falta de implementación"
+      ]
+    }
+  },
+  "recommendations": [
+    "Ejecutar migración completa para la tabla dim_cost_category - cobertura del 67%",
+    "Ejecutar migración completa para la tabla parts - cobertura del 55%",
+    "Ejecutar migración completa para la tabla invoices - cobertura del 28%",
+    "Agregar columnas críticas a invoices: vendor_name, status",
+    "Ejecutar migración completa para la tabla discrepancies - cobertura del 63%",
+    "Agregar columnas críticas a discrepancies: priority, category",
+    "Ejecutar migración completa para la tabla discrepancy_costs - cobertura del 40%",
+    "Ejecutar migración completa para la tabla discrepancy_parts - cobertura del 0%",
+    "Implementar lógica para vincular partes con discrepancias",
+    "Actualizar la aplicación React para trabajar con la estructura real de la base de datos",
+    "Crear vista de compatibilidad para mapear entre estructura esperada y real",
+    "Documentar las diferencias entre el diseño y la implementación real"
+  ],
+  "critical_issues": [
+    "invoices: Columna crítica faltante: vendor_name",
+    "invoices: Columna crítica faltante: status",
+    "invoices: Campos críticos faltantes en facturas: vendor_name, status, aircraft_registration",
+    "discrepancies: Columna crítica faltante: priority",
+    "discrepancies: Columna crítica faltante: category"
+  ],
+  "compatibility_score": 17
+}

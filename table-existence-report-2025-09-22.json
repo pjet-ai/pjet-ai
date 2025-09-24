@@ -1,0 +1,140 @@
+{
+  "analysis_date": "2025-09-22T03:05:32.685Z",
+  "project": "ORION OCG - Aviation Maintenance Suite",
+  "supabase_project": "vvazmdauzaexknybbnfc",
+  "tables_checked": [
+    "dim_cost_category",
+    "parts",
+    "invoices",
+    "discrepancies",
+    "discrepancy_costs",
+    "discrepancy_parts",
+    "maintenance_records",
+    "maintenance_financial_breakdown",
+    "maintenance_parts",
+    "maintenance_attachments",
+    "expenses",
+    "flights",
+    "flight_logbook"
+  ],
+  "results": {
+    "dim_cost_category": {
+      "exists": true,
+      "count": 4,
+      "schema": [
+        "id",
+        "code",
+        "display_name",
+        "name"
+      ]
+    },
+    "parts": {
+      "exists": true,
+      "count": 258,
+      "schema": [
+        "id",
+        "part_number",
+        "description",
+        "uom",
+        "created_at",
+        "updated_at"
+      ]
+    },
+    "invoices": {
+      "exists": true,
+      "count": 1,
+      "schema": [
+        "id",
+        "invoice_number",
+        "work_order_number",
+        "invoice_date",
+        "currency_code",
+        "reported_total",
+        "created_at",
+        "updated_at"
+      ]
+    },
+    "discrepancies": {
+      "exists": true,
+      "count": 274,
+      "schema": [
+        "id",
+        "invoice_id",
+        "item_number",
+        "description",
+        "ata_code",
+        "ata_chapter",
+        "regulatory_code",
+        "notes",
+        "created_at",
+        "updated_at"
+      ]
+    },
+    "discrepancy_costs": {
+      "exists": true,
+      "count": 282,
+      "schema": [
+        "id",
+        "discrepancy_id",
+        "cost_category_id",
+        "amount"
+      ]
+    },
+    "discrepancy_parts": {
+      "exists": true,
+      "count": 0,
+      "schema": []
+    },
+    "maintenance_records": {
+      "exists": true,
+      "count": 0
+    },
+    "maintenance_financial_breakdown": {
+      "exists": true,
+      "count": 0
+    },
+    "maintenance_parts": {
+      "exists": true,
+      "count": 0
+    },
+    "maintenance_attachments": {
+      "exists": true,
+      "count": 0
+    },
+    "expenses": {
+      "exists": true,
+      "count": 0,
+      "schema": []
+    },
+    "flights": {
+      "exists": true,
+      "count": 3,
+      "schema": [
+        "id",
+        "reference_id",
+        "departure_location",
+        "destination_location",
+        "flight_date",
+        "departure_time",
+        "flight_type",
+        "flight_purpose",
+        "observations",
+        "user_id",
+        "created_at",
+        "updated_at",
+        "invoice_url"
+      ]
+    },
+    "flight_logbook": {
+      "exists": true,
+      "count": 0
+    }
+  },
+  "summary": {
+    "total_checked": 13,
+    "existing_tables": 13,
+    "non_existing_tables": 0,
+    "has_legacy_structure": true,
+    "has_new_structure": true
+  }
+}

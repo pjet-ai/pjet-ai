@@ -1,0 +1,17 @@
+{
+  "project_info": {
+    "name": "ORION OCG - Aviation Maintenance Suite",
+    "analysis_date": "2025-09-22T03:05:05.924Z",
+    "supabase_project": "vvazmdauzaexknybbnfc"
+  },
+  "tables": {},
+  "relationships": [],
+  "summary": {
+    "total_tables_analyzed": 0,
+    "tables_with_data": 0,
+    "tables_empty": 0,
+    "total_records": 0,
+    "database_status": "EMPTY",
+    "data_quality_score": null
+  }
+}

@@ -1,0 +1,347 @@
+{
+  "analysis_date": "2025-09-22T03:06:26.250Z",
+  "project": "ORION OCG - Aviation Maintenance Suite",
+  "tables": {
+    "dim_cost_category": {
+      "table": "dim_cost_category",
+      "data": [
+        {
+          "id": 1,
+          "code": "labor",
+          "display_name": "Labor",
+          "name": "Labor"
+        },
+        {
+          "id": 2,
+          "code": "parts",
+          "display_name": "Parts",
+          "name": "Parts"
+        },
+        {
+          "id": 3,
+          "code": "services",
+          "display_name": "Services",
+          "name": "Services"
+        },
+        {
+          "id": 4,
+          "code": "freight",
+          "display_name": "Freight",
+          "name": "Freight"
+        }
+      ]
+    },
+    "parts": {
+      "table": "parts",
+      "count": 258,
+      "sample": [
+        {
+          "id": "18f16983-786f-44bf-87c4-a8d35f873a26",
+          "part_number": "01C0CBNC8-202",
+          "description": "CONNECTOR",
+          "uom": "EA",
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "6d2c6090-e4a2-4590-ad2d-f9892cd6476a",
+          "part_number": "02N60052",
+          "description": "BATTERY SERVICING KIT",
+          "uom": "EA",
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "7f4bfff6-0078-4eee-927e-edbfbf1b79f0",
+          "part_number": "100031-0",
+          "description": "CARBON SEAL",
+          "uom": "EA",
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "9914004b-2d38-48b3-a2b1-44b07001a4e7",
+          "part_number": "103-0001-18A800",
+          "description": "ORING",
+          "uom": "EA",
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "b38ca5a7-51e7-4455-b7e4-c53bd4a7cdb9",
+          "part_number": "103-0001-21A800",
+          "description": "ORING",
+          "uom": "EA",
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "8c7ddaf9-553d-443a-9ae9-e2d8c097dc2e",
+          "part_number": "1050340056",
+          "description": "TAB LOCK, WASHER",
+          "uom": "EA",
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "b2e7f209-b314-41b5-a128-7a1a544dbbf1",
+          "part_number": "1050430014",
+          "description": "WASHER, LOCK",
+          "uom": "EA",
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "27fdfdff-b644-40ab-8ba5-613baecbfbe5",
+          "part_number": "105045-13",
+          "description": "AFU, AUX PITCH *** Alt ***",
+          "uom": "EA",
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "136efa29-e7da-4827-baaa-6efdb919a375",
+          "part_number": "119-0232",
+          "description": "TIMP RESISTER",
+          "uom": "EA",
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "824c720a-f8f5-4b12-8f57-c4622b2ae426",
+          "part_number": "1445846",
+          "description": "ALODINE PEN/BONDERITE TOUCH AND PREP PEN",
+          "uom": "EA",
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        }
+      ]
+    },
+    "invoices": {
+      "table": "invoices",
+      "data": [
+        {
+          "id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "invoice_number": "18415A",
+          "work_order_number": "43105",
+          "invoice_date": "2025-07-24",
+          "currency_code": "USD",
+          "reported_total": 924253.02,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        }
+      ]
+    },
+    "discrepancies": {
+      "table": "discrepancies",
+      "count": 274,
+      "sample": [
+        {
+          "id": "9576a8eb-52e1-4f40-adc1-70ab6e69f6f9",
+          "invoice_id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "item_number": "1.1",
+          "description": "Comply with Preliminary Inspection",
+          "ata_code": null,
+          "ata_chapter": null,
+          "regulatory_code": null,
+          "notes": null,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "2eb9276f-f5b0-4176-ae8c-842b27ccbdf1",
+          "invoice_id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "item_number": "1.10",
+          "description": "Task - 21 52-18-100-801 - CLEAN OF THE HIGH PRESSURE WATER SEPARATOR FILTER",
+          "ata_code": null,
+          "ata_chapter": null,
+          "regulatory_code": null,
+          "notes": null,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "e05e6d5c-e45c-42a7-8714-9cbc3133e665",
+          "invoice_id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "item_number": "1.100",
+          "description": "LH aileron inboard bonding braid broken",
+          "ata_code": null,
+          "ata_chapter": null,
+          "regulatory_code": null,
+          "notes": null,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "b9f86775-f44c-4ce2-a4c2-06de0192fe43",
+          "invoice_id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "item_number": "1.101",
+          "description": "Numerous spots of corrosion on LH upper and lower wing surfaces.",
+          "ata_code": null,
+          "ata_chapter": null,
+          "regulatory_code": null,
+          "notes": null,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "e800ebc2-04c0-4c71-a34e-9ec1f48647c6",
+          "invoice_id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "item_number": "1.102",
+          "description": "Numerous spots of corrosion on RH upper and lower wing surfaces.",
+          "ata_code": null,
+          "ata_chapter": null,
+          "regulatory_code": null,
+          "notes": null,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "7ac14721-0384-465d-8491-07117872525e",
+          "invoice_id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "item_number": "1.103",
+          "description": "RH #1 and #3 slat actuators show signs of leakage.",
+          "ata_code": null,
+          "ata_chapter": null,
+          "regulatory_code": null,
+          "notes": null,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "3e073271-221e-4fa0-a204-962854bbbf2d",
+          "invoice_id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "item_number": "1.104",
+          "description": "LH wing TE has hydraulic leak at #2 aileron servo return line.",
+          "ata_code": null,
+          "ata_chapter": null,
+          "regulatory_code": null,
+          "notes": null,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "0694ef1e-f8f2-4482-beaf-b6bf03bd56b7",
+          "invoice_id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "item_number": "1.105",
+          "description": "Heat exchanger flange corroded and multiple fasteners corroded.",
+          "ata_code": null,
+          "ata_chapter": null,
+          "regulatory_code": null,
+          "notes": null,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "e0ebe471-3be7-4ac5-a012-a03c8ceae252",
+          "invoice_id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "item_number": "1.106",
+          "description": "Broken bonding braid on heat exchanger.",
+          "ata_code": null,
+          "ata_chapter": null,
+          "regulatory_code": null,
+          "notes": null,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        },
+        {
+          "id": "f8f8c781-63db-47d2-bef0-bd5bd3984647",
+          "invoice_id": "804ce0c2-b04f-4786-9e26-3a59374d9ec5",
+          "item_number": "1.107",
+          "description": "FSC floor panel 320BZ has 2 broken fasteners",
+          "ata_code": null,
+          "ata_chapter": null,
+          "regulatory_code": null,
+          "notes": null,
+          "created_at": "2025-09-22T01:52:18.638043+00:00",
+          "updated_at": "2025-09-22T01:52:18.638043+00:00"
+        }
+      ],
+      "distribution": {}
+    },
+    "discrepancy_costs": {
+      "table": "discrepancy_costs",
+      "count": 282,
+      "sample": [
+        {
+          "id": 589,
+          "discrepancy_id": "ed0e1c12-2d11-4876-8bd0-95e62998b964",
+          "cost_category_id": 1,
+          "amount": 4950
+        },
+        {
+          "id": 590,
+          "discrepancy_id": "5e4f82ab-a43f-4d39-9575-36d2e422ba94",
+          "cost_category_id": 1,
+          "amount": 288.75
+        },
+        {
+          "id": 591,
+          "discrepancy_id": "0d73a811-4942-44af-b887-7d72acccf184",
+          "cost_category_id": 1,
+          "amount": 1980
+        },
+        {
+          "id": 592,
+          "discrepancy_id": "d1205423-5819-4f85-b6fc-0cff61656f39",
+          "cost_category_id": 1,
+          "amount": 330
+        },
+        {
+          "id": 593,
+          "discrepancy_id": "5bcd23b7-ba70-4dbb-bfe5-a5ebe2d67812",
+          "cost_category_id": 1,
+          "amount": 247.5
+        },
+        {
+          "id": 594,
+          "discrepancy_id": "ad9a32b5-a5d5-4499-b7d7-795abf8903d5",
+          "cost_category_id": 1,
+          "amount": 1155
+        },
+        {
+          "id": 595,
+          "discrepancy_id": "5abafc6c-8b35-47c2-b04b-c2d3ae94c26d",
+          "cost_category_id": 1,
+          "amount": 206.25
+        },
+        {
+          "id": 596,
+          "discrepancy_id": "fd7fd1be-4923-42dd-9ae6-887f998f3bfb",
+          "cost_category_id": 1,
+          "amount": 1980
+        },
+        {
+          "id": 597,
+          "discrepancy_id": "c00af577-e7d7-4a8b-94eb-2e03fc3662e8",
+          "cost_category_id": 1,
+          "amount": 330
+        },
+        {
+          "id": 598,
+          "discrepancy_id": "be0fca6d-a5dc-482a-91a4-d96def694c5b",
+          "cost_category_id": 1,
+          "amount": 1280
+        }
+      ],
+      "cost_summary": {
+        "1": {
+          "total": 485198.96,
+          "count": 184
+        },
+        "2": {
+          "total": 307615.3500000001,
+          "count": 77
+        },
+        "3": {
+          "total": 128263.1,
+          "count": 21
+        }
+      },
+      "total_amount": 921077.41
+    }
+  },
+  "relationships": {
+    "analyzed": true
+  }
+}
